@@ -11,7 +11,10 @@
 
 .navigation
 {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
     position:fixed;
     margin: auto;
     top: 30px;
@@ -19,10 +22,10 @@
     width: 50%;
     transition: top 0.3s;
 }
-
-.navigation ul li
-{
-    display: inline-block;
+.nava {
+    margin: 0;
+    padding: 0;
+    display: flex;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -30,6 +33,7 @@
     font-family:'Anek Tamil', sans-serif;
     width:auto;
 }
+
 .navigation a:hover {
     color: gray
 }
@@ -166,6 +170,22 @@ a {
 .gallery {
     height: 50px;
 }
+.toggle-button {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+
+}
 
 
   @media (max-width: 1252px)
@@ -229,6 +249,34 @@ a {
     h3 {
         font-size: 14px;
     }
+    .nava {
+        display: none;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nava ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nava li {
+        text-align: center;
+    }
+    .nava.active {
+        margin: 40px 0px 0px -5px;
+        display: flex;
+        font-size: 15px;
+    }
+    .toggle-button {
+        margin-left: 8px;
+    }
 
+    .main.active {
+        top: 150px;
+    }
 
   }

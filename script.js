@@ -1,10 +1,10 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementsByClassName("navigation").style.top = "0";
-  } else {
-    document.getElementsByClassName("navigation").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('nava')[0]
+const main = document.getElementsByClassName('main')[0]
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
+
+toggleButton.addEventListener('click', () => {
+  main.classList.toggle('active')
+})
