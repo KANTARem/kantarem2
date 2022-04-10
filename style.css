@@ -1,0 +1,220 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "anek tamil", sans-serif;
+}
+
+.navigation
+{
+
+    position:fixed;
+    margin: auto;
+    top: 30px;
+    right: 4%;
+    width: 50%;
+    transition: top 0.3s;
+}
+
+.navigation ul li
+{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-right: 40px;
+    font-family:'Anek Tamil', sans-serif;
+}
+.navigation a:hover {
+    color: gray
+}
+
+#logo 
+{
+    position: fixed;
+    height: 80px;
+    margin-left: 20%;
+}
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .main {
+    position: relative;
+    text-align: center;
+    top: 80px;
+    color: white;
+    margin: 0 0;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:  200px;
+    font-family: 'anek tamil', sans-serif;
+  }
+  #gray {
+      height: 500px;
+  }
+
+  .text 
+  {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: -4px auto;
+  }
+
+  .text > * {
+      
+      margin: 20px, 0;
+  }
+
+  .a1
+  {
+    position:  absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:  15px;
+    font-family: 'anek tamil', sans-serif;
+    margin-bottom: 40px;
+  }
+  .a2
+  {
+    position:  absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:  30px;
+    font-family: 'anek tamil', sans-serif;
+    margin-bottom: 40px;
+  }
+  .a3
+  {
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size:  20px;
+    font-weight: 100;
+    font-family: 'anek tamil', sans-serif;
+    line-height: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .checkbtn 
+  {
+      font-size: 30px;
+      color:black;
+      float:right;
+      line-height: 80px;
+      cursor: pointer;
+      display: none;
+  }
+  #check 
+  {
+     display: none; 
+  }
+  #burger
+  {
+      height:30px;
+  }
+  .row {
+      width: 70%;
+      margin: 0 auto;
+  }
+  .column {
+    text-align: center;
+    float: left;
+    padding: 15px;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .responsive {
+    float:left;
+    position: relative;
+    width: 28%;
+    left:20px;
+    margin: auto 2%;
+    height: 60px;
+}
+.gallery {
+    height: 80px;
+}
+
+
+  @media (max-width: 1252px)
+  {
+    .main {
+        top: 65px;
+    }
+    .centered {
+        font-size: 100px;
+    }
+    .a2 {
+        top: 18%;
+    }
+    .a3 {
+        top:50%;
+    }
+    .navigation {
+        top: 20px;
+    }
+    .navigation ul li a
+    {
+        font-size: 14px;
+    }
+    #logo {
+        margin-left: 5%;
+        height: 65px;
+    }
+  }
+
+  h3 {
+      font-weight: 100;
+  }
+  
+
+  @media (max-width: 858px)
+  {
+    #logo {
+        height: 40px;
+    }
+    .main {
+        top: 40px;
+    }
+    .navigation {
+        top: 10px;
+    }
+    .navigation ul li a
+    {
+        font-size: 12px;
+    }
+    .a1 {
+        font-size: 12px;
+    }
+    .a2 {
+        font-size: 22px;
+    }
+    .a3 {
+        top: 54%;
+        font-size: 16px;
+    }
+
+
+  }
