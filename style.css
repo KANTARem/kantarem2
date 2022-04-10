@@ -20,18 +20,24 @@
     top: 30px;
     right: 4%;
     width: 50%;
+    word-spacing: 30px;
     transition: top 0.3s;
 }
 .nava {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: inline-block;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
+    word-spacing: 30px;
     margin-right: 40px;
     font-family:'Anek Tamil', sans-serif;
     width:auto;
+}
+.nava li {
+    display: inline;
+    word-spacing: 30px;
 }
 
 .navigation a:hover {
@@ -265,6 +271,7 @@ a {
     }
     .nava li {
         text-align: center;
+        display: flex;
     }
     .nava.active {
         margin: 40px 0px 0px -5px;
