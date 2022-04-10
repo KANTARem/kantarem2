@@ -73,7 +73,7 @@ a {
 
   .text > * {
       
-      margin: 20px, 0;
+      margin: 20px 0;
   }
 
   .a1
@@ -124,6 +124,10 @@ a {
      display: none; 
   }
   #burger
+  {
+      height:30px;
+  }
+  #burger2
   {
       height:30px;
   }
